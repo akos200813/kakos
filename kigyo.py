@@ -19,3 +19,6 @@ def parosossz(a:int):
         if i % 2 == 0:
             osszeg += i
     return osszeg
+
+def atlag(osszeg, db):
+    return osszeg / db
