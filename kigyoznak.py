@@ -1,4 +1,5 @@
 from kigyo import *
+import random
 '''a = int(input('Adj egy számot: '))
 
 szam1 = int(input('Adj egy számot: '))
@@ -11,3 +12,10 @@ jegyek = []
 napok = ['hetfo', 'kedd', 'szerda', 'csutortok', 'pentek', 'szombat', 'vasarnap']
 print(napok[0])
 
+jegyek.append(5)
+egyjegy = int(input('Masodik jegyed? '))
+jegyek.append(egyjegy)
+harmadik = random.randint(1,6)
+jegyek.append(harmadik)
+for i in range(len(jegyek)):
+    print(f'{i+1}. jegy: {jegyek[i]}')
